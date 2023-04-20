@@ -1,0 +1,132 @@
+.form {
+    min-width: 621px;
+    background: rgba(0, 59, 86, 0.85);
+    border: 5px dashed #F58020;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 500px;
+}
+
+.wrapperHeading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 35px;
+}
+
+.back {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.back span {
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 18px;
+    font-family: var(--ubuntu);
+}
+
+.formHeading {
+    font-size: 30px;
+    text-align: center;
+    color: #FDFDFF;
+    font-family: var(--ubuntu);
+    border-bottom: 1px solid #FDFDFF;
+    width: max-content;
+}
+
+.formHeading span {
+    color: #F58020;
+}
+
+.wrapperContent {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+
+.dataGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.dataGroup div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.dataGroup div label {
+    color: #F58020;
+    font-family: var(--ubuntu);
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.dataGroup div p {
+    font-weight: 700;
+    font-size: 24px;
+    font-family: var(--ubuntu);
+    color: #FDFDFF;
+    max-width: 310px;
+}
+
+.sendBtn {
+    color: #FDFDFF;
+    font-weight: 700;
+    font-family: var(--ubuntu);
+    width: 260px;
+    border: 5px solid #F58020;
+    border-radius: 5px;
+    text-align: center;
+    padding: 12px 0;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+    .form {
+        width: 100%;
+        min-width: initial;
+        max-width: 621px;
+        padding: 20px;
+    }
+
+    .back {
+        max-width: 45px;
+        transform: translateY(-15px);
+    }
+
+    .back span {
+        font-size: 14px;
+    }
+
+    .dataGroup div p {
+        font-size: 16px;
+    }
+
+    .dataGroup:last-child div {
+        align-items: end;
+    }
+    .dataGroup:last-child div p,
+    .dataGroup:last-child div label {
+        text-align: end;
+    }
+
+    .dataGroup:last-child div label {
+        white-space: nowrap;
+    }
+
+    .sendBtn {
+        width: 100%;
+    }
+}

@@ -1,0 +1,58 @@
+.header * {
+    font-family: var(--ubuntu);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.phoneNumber,
+.navBar,
+.mail {
+    display: flex;
+    align-items: center;
+}
+
+.phoneNumber,
+.mail {
+    gap: 16px;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--blackIntoBlue);
+    font-weight: 500;
+}
+
+.navBar {
+    gap: 80px;
+}
+
+.link {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--blackIntoBlueOpc);
+}
+
+
+@media screen and (max-width: 1024px) {
+    .phoneNumber,
+    .mail {
+        font-size: 14px;
+        gap: 5px;
+    }
+
+    .phoneNumber svg {
+        width: 20px;
+    }
+
+    .mail svg {
+        width: 15px;
+    }
+
+    .navBar {
+        gap: 30px;
+    }
+}

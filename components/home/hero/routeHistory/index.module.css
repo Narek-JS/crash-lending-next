@@ -1,0 +1,80 @@
+
+.routeHistory {
+    display: flex;
+    gap: 6px;
+}
+
+.step {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex: 1 1 auto;
+}
+
+.stepId {
+    width: 80px;
+    height: 48px;
+    background-color: #003B56;
+    border-radius: 25px;
+    font-weight: 700;
+    font-size: 24px;
+    font-family: var(--ubuntu);
+    color: #FDFDFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stepText {
+    border-radius: 15px;
+    color: #003B56;
+    font-weight: 700;
+    font-size: 20px;
+    font-family: var(--ubuntu);
+    white-space: nowrap;
+}
+
+.active {
+    background-color: var(--baseOrange);
+    color: #FDFDFF;
+    padding: 0px 8px;
+}
+
+.row {
+    height: 1px;
+    background: #003B56;
+    position: relative;
+    flex: 1 1 auto;
+    min-width: 15px;
+}
+
+.row::after {
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    background-color: #003B56;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+}
+
+@media screen and (max-width:1024px) {
+    .step {
+        gap: 2px;
+    }
+
+    .stepId {
+        max-width: 50px;
+        height: 35px;
+    }
+
+    .stepText {
+        font-size: 16px;
+    }
+
+    .active {
+        padding: 0px 6px;
+    }
+}

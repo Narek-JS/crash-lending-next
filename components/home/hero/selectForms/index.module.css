@@ -1,0 +1,45 @@
+.root {
+    margin-top: 42px;
+}
+
+.form {
+    margin-top: 30px;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.wrapperDescription {
+    max-width: 435px;
+}
+
+.title {
+    margin-bottom: 16px;
+    font-weight: 700;
+    font-size: 48px;
+    font-family: var(--ubuntu);
+    color: #003B56;
+}
+
+.title span {
+    color: #F58020;
+}
+
+.description {
+    color: rgba(0, 59, 86, 0.85);
+    font-weight: 500;
+    font-size: 24px;
+    font-family: var(--ubuntu);
+}
+
+@media screen and (max-width:1024px) {
+    .form { justify-content: center; }
+}
+
+@media screen and (max-width: 768px) {
+    .form {
+        margin-top: 120px;
+    }
+}

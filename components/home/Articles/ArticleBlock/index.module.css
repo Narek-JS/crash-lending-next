@@ -1,0 +1,56 @@
+.articleBlock {
+    background: #F4F4F3;
+    border: 5px dashed #F58020;
+    box-shadow: 4px 4px 4px rgba(0, 12, 51, 0.15);
+    border-radius: 15px;
+    width: 327px;
+    padding: 30px 20px;
+}
+
+.blog {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.blogName {
+    color: #F58020;
+    font-weight: 500;
+    font-size: 20px;
+    font-family: var(--ubuntu);
+}
+
+.viewAll {
+    color: rgba(4, 26, 68, 0.6);
+    font-weight: 500;
+    font-size: 20px;
+    font-family: var(--ubuntu);
+}
+
+.description {
+    color: #003B56;
+    font-weight: 700;
+    font-size: 20px;
+    font-family: var(--ubuntu);
+    margin-bottom: 12px;
+}
+
+.calendar {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    color: rgba(0, 59, 86, 0.6);
+    font-weight: 500;
+    font-family: var(--ubuntu);
+    margin-bottom: 22px;
+}
+
+.readMore {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #F58020;
+    font-weight: 700;
+    font-family: var(--ubuntu);
+}

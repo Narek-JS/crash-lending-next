@@ -1,0 +1,264 @@
+.form {
+    min-width: 621px;
+    background: rgba(0, 59, 86, 0.85);
+    border: 5px dashed #F58020;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 500px;
+}
+
+.wrapperHeading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.back {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.back span {
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 18px;
+    font-family: var(--ubuntu);
+}
+
+.formHeading {
+    font-size: 30px;
+    text-align: center;
+    color: #FDFDFF;
+    font-family: var(--ubuntu);
+    border-bottom: 1px solid #FDFDFF;
+    width: max-content;
+}
+
+.formHeading span {
+    color: #F58020;
+}
+
+.formLable {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    color: #FDFDFF;
+    font-family: var(--ubuntu);
+    font-size: 18px;
+    font-weight: 700;
+    display: flex;
+    gap: 17px;
+}
+
+.vehicleGroup {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.wrapperFormInput {
+    position: relative;
+}
+
+.formInput {
+    width: 100%;
+    padding: 7px 20px;
+    background: #FDFDFF;
+    border-radius: 5px;
+    max-width: 183px;
+}
+
+.error {
+    color: red;
+    position: absolute;
+    left: 5px;
+    bottom: -20px;
+    max-width: 183px;
+    font-size: 14px;
+}
+
+.editLists {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.addList {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+}
+
+.addList span {
+    color: #FDFDFF;
+    font-weight: 700;
+    font-size: 20px;
+    font-family: var(--ubuntu);
+}
+
+.removeList {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+}
+
+.removeList span {
+    color: #FDFDFF;
+    font-weight: 700;
+    font-size: 20px;
+    font-family: var(--ubuntu);
+}
+
+.selectConditions {
+    margin-bottom: 31px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.timeBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: relative;
+}
+
+.shippingMethod {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.operableMethod {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.checkboxes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.wrapperCheckbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 10px;
+    position: relative;
+}
+
+.checkboxList {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.formLable {
+    white-space: nowrap;
+    margin-bottom: 0;
+}
+
+.sendBtn {
+    color: #FDFDFF;
+    font-weight: 700;
+    font-family: var(--ubuntu);
+    width: 260px;
+    border: 5px solid #F58020;
+    border-radius: 5px;
+    text-align: center;
+    padding: 12px 0;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+    .form {
+        width: 100%;
+        min-width: initial;
+        max-width: 621px;
+        padding: 20px;
+        height: initial;
+    }
+
+    .vehicleGroup {
+        flex-direction: column;
+        align-items: initial;
+        width: 100%;
+        gap: 20px;
+        margin-bottom: 10px;
+    }
+
+    .addList svg {
+        max-width: 15px;
+    }
+
+    .addList span,
+    .formLable {
+        font-size: 15px;
+    }
+
+    .formInput {
+        max-width: 100%;
+    }
+
+    .back {
+        max-width: 45px;
+        transform: translateY(-15px);
+    }
+
+    .back span {
+        font-size: 14px;
+    }
+
+    .formHeading {
+        transform: translateY(15px);
+        white-space: nowrap;
+    }
+    .selectConditions {
+        align-items: flex-start;
+        justify-content: initial;
+    }
+    .checkboxes {
+        flex-direction: column;
+        align-items: start;
+    }
+    .wrapperCheckbox { 
+        gap: 20px;
+    }
+    .sendBtn {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .selectConditions {
+        flex-direction: column;
+        width: 100%;
+    }
+    .timeBlock {
+        width: 100%;
+    }
+    .wrapperCheckbox { 
+        gap: 40px;
+    }
+
+}

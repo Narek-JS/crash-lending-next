@@ -1,0 +1,109 @@
+.bugreg {
+    width: 55px;
+    height: 35px;
+    background-color: var(--baseOrange);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4px;
+    padding: 0px 5px;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+}
+
+.row {
+    display: block;
+    height: 5px;
+    background: #FFFFFF;
+    width: 100%;
+}
+
+.sideBar {
+    height: 100vh;
+    width: 375px;
+    padding: 30px 20px;
+    background-color: #003B56;
+    position: fixed;
+    z-index: 999999999;
+    transition: .3s;
+    overflow-y: scroll;
+    left: 0;
+    top: 0;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    animation-name: fromleft;
+    animation-duration: .2s;
+    animation-timing-function: ease-in-out;
+    transition: .3s;
+}
+
+.closeBtn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.closeBtn svg {
+    color: #fdfdff;
+    font-family: icomoon!important;
+    font-style: normal;
+    font-weight: 400;
+    font-feature-settings: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    width: 24px;
+    height: 24px;
+    fill: #FFFFFF;
+    cursor: pointer;
+}
+
+.logo {
+    width: auto;
+    height: fit-content;
+}
+
+.linkGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.groupName {
+    color: #F58020;
+    font-weight: 500;
+    font-size: 25px;
+    font-family: var(--ubuntu);
+    white-space: nowrap;
+}
+
+.link {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color: #F58020;
+    font-size: 14px;
+    font-family: var(--ubuntu);
+    max-width: 215px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes fromleft {
+    from {
+      left: -375px;
+    }
+    to {
+      left: 0px;
+    }
+}

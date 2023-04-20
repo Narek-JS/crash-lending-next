@@ -1,0 +1,34 @@
+.scrollTopIcon {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 40px;
+    min-width: 40px;
+    height: 40px;
+    overflow: hidden;
+    background-color: #f3bd1b!important;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation-name: toView;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    transition: .3s;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.scrollTopIcon span {
+    color: #fff;
+    font-size: 18px;
+}
+
+@keyframes toView {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}

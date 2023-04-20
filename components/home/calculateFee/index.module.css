@@ -1,0 +1,64 @@
+.calculateFeeSection {
+    width: 100%;
+    padding: 30px 0 38px 0;
+}
+
+.subTitle {
+    color: #041A44;
+    font-weight: 700;
+    font-size: 20px;
+    font-family: var(--ubuntu);
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.wrapperCategories {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.categoryCard {
+    padding: 25px 30px;
+    background-color: #F4F4F3;
+    border: 5px dashed #003B56;
+    box-shadow: 5px 5px 5px rgba(0, 59, 86, 0.35);
+    border-radius: 20px;
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 193px;
+}
+
+.cardText {
+    color: #003B56;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: var(--ubuntu);
+    line-height: 20px;
+    margin-top: 13px;
+    text-align: center;
+}
+
+.intoFAQs {
+    color: #F58020;
+    font-weight: 700;
+    font-size: 16px;
+    font-family: var(--ubuntu);
+    border: 1px solid #F58020;
+    border-radius: 5px;
+    width: 140px;
+    text-align: center;
+    padding: 12px 20px;
+    margin: 0 auto;
+    display: block;
+}
+
+@media screen and (max-width: 616px) {
+    .categoryCard {
+        width: 100%;
+    }
+}

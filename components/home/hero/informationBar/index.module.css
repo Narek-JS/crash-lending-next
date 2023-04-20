@@ -1,0 +1,39 @@
+
+.informationBar {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menuSelects {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+.seaech {
+    background-color: var(--baseOrange);
+    width: 68px;
+    height: 40px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 1024px) {
+    .logo {
+        max-width: 100px;
+    }
+
+    .menuSelects {
+        font-size: 14px;
+        gap: 30px;
+    }
+
+    .seaech {
+        width: 55px;
+        height: 35px;
+    }
+}

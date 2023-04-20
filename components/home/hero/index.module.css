@@ -1,0 +1,12 @@
+.heroSection {
+    background-image: url('../../../public/assets/images/heroBg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    .heroSection {
+        background-image: initial;
+    }
+}
